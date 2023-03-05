@@ -24,7 +24,7 @@ app.set("port", port);
 var server = http.createServer(app);
 
 // connect to database via mongoose
-mongoose.connect(config.db_conn).then(() => console.log("connected"));
+mongoose.connect(config.db_conn).then(() => console.log(" db connected"));
 
 /**
  * Listen on provided port, on all network interfaces.
